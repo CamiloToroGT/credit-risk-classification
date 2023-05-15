@@ -1,0 +1,11 @@
+Analysis Overview:
+The purpose of this analysis was to evaluate the effectiveness of loan status prediction using a dataset comprising various loan attributes. The primary objective was to distinguish between healthy and high-risk loans based on factors such as loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, total debt, and loan status.
+To achieve this, the dataset was divided into training and testing sets, and a logistic regression model was implemented to build prediction models. The performance of the models was evaluated using precision, recall, and balanced accuracy metrics. Additionally, the training data was balanced using the RandomOverSampler technique to enhance the model's accuracy.
+Results:
+Machine Learning Model 1:
+Model 1 exhibited a high accuracy rate in predicting healthy loans, achieving precision and recall rates of 1.00 and 0.99, respectively. However, it showed a slightly lower performance in identifying high-risk loans, with precision and recall rates of 0.85 and 0.91, respectively. The balanced accuracy score for this model was approximately 0.95.
+Machine Learning Model 2:
+Model 2 showcased improved accuracy in predicting healthy loans, attaining precision and recall rates of 1.00 and 0.99, respectively. Furthermore, it demonstrated enhanced performance in identifying high-risk loans, with precision and recall rates of 0.84 and 0.99, respectively. The balanced accuracy score for this model was approximately 0.99.
+Summary:
+Upon comparing the results of both models, Model 2 emerged as the more effective approach for loan risk prediction. It displayed higher recall for high-risk loans, indicating a lower occurrence of false negatives compared to Model 1. Although Model 2 sacrificed a marginal amount of precision, resulting in a slight increase in misclassifying healthy loans as high-risk, the improved recall justified this trade-off. Moreover, Model 2 achieved a higher balanced accuracy score, signifying superior performance in handling the imbalanced dataset.
+In conclusion, it is recommended to utilize Model 2 for loan risk prediction due to its enhanced ability to identify high-risk loans while maintaining a strong prediction performance for healthy loans.
